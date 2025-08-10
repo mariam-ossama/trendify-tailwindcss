@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .container {
+        margin-inline: auto;
+    }
+}
+
+.service-item h5 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 8px 0 24px;
+    font-weight: 700;
+}
+.service-item p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9CA3AF;
+}
+.product-item h5 {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 12px 0px;
+    font-weight: 400;
+}
