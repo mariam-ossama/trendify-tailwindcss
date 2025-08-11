@@ -30,3 +30,11 @@
 .text-glow-black {
     text-shadow: 0 0 4px rgba(9, 15, 65,0.3);
 }
+label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+li {
+    margin-bottom: 15px;
+}

@@ -271,19 +271,21 @@
         </div>
     </section>
     <!--About us-->
-    <section class="min-h-[200vh] bg-[#F6F6F6] py-9">
-        <div class="container text-center">
-            <h2 class="text-glow-black relative text-[#090F41] text-5xl leading-12 font-bold after:content-[''] after:block after:h-0.5 after:bg-[#090F41] 
-    after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:mt-2 after:w-1/3">A few words about us
+    <section class="min-h-[200vh] bg-[#F6F6F6] py-9 flex justify-center items-center">
+        <div class="box">
+            <div class="container text-center">
+            <h2 class="text-glow-black relative text-[#090F41] text-5xl leading-12 font-bold mb-6 after:content-[''] after:block after:h-[1px] after:bg-[#090F41] 
+    after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:mt-2 after:w-[90px]">A few words about us
             </h2>
-            <p class="text-xl leading-7 font-normal">Make your best moments more stylish with our latest designs of
+            <p class="text-xl leading-7 font-normal mb-20">Make your best moments more stylish with our latest designs of
                 clothing.</p>
         </div>
-        <div class="choose-us flex justify-between">
-            <div class="choose-us-img w-[48%] m-auto rounded-2xl">
+        <div class="content flex flex-wrap justify-between items-center">
+            <div class="choose-us w-full flex flex-wrap justify-between mb-20">
+            <div class="choose-us-img m-auto rounded-2xl w-full md:w-[48%] mb-10 md:me-5">
                 <img src="../src/assets/images/about-1-min.png" alt="Choose Us Image" class="w-full block">
             </div>
-            <div class="choose-us-paragraph w-[48%] m-auto">
+            <div class="choose-us-paragraph m-auto w-full md:w-[48%]">
                 <h3 class="text-2xl leading-8 font-normal">Why choose us ?</h3>
                 <p class="text-[#374151] text-[16px] leading-6 mt-4 font-normal">Maecenas congue metus id turpis iaculis
                     mattis. Sed pellentesque id arcu id scelerisque. Ut
@@ -292,29 +294,32 @@
                     mauris. Integer congue, sem elementum varius tristique.</p>
             </div>
         </div>
-        <div class="online-shopping flex justify-between">
-            <div class="choose-us-paragraph w-[48%] m-auto">
+        <div class="online-shopping w-full flex flex-wrap justify-between">
+            <div class="choose-us-paragraph m-auto w-full md:w-[48%] md:me-5">
                 <h3 class="text-2xl leading-8 font-normal">Trusted online shopping</h3>
-                <p class="text-[#374151] text-[16px] leading-6 mt-4 font-normal">Maecenas congue metus id turpis iaculis
+                <p class="text-[#374151] text-[16px] leading-6 mt-4 font-normal mb-10">Maecenas congue metus id turpis iaculis
                     mattis. Sed pellentesque id arcu id scelerisque. Ut
                     ullamcorper rutrum justo, at blandit eros maximus ut. Integer non tincidunt justo, rhoncus Aenean
                     venenatis sed purus ac sollicitudin. Nulla mauris risus, commodo et luctus rutrum, lobortis sed
                     mauris. Integer congue, sem elementum varius tristique.</p>
             </div>
-            <div class="choose-us-img w-[48%] m-auto rounded-2xl">
+            <div class="choose-us-img m-auto rounded-2xl w-full md:w-[48%]">
                 <img src="../src/assets/images/about-2-min.png" alt="Online Shopping Image" class="w-full block">
             </div>
+        </div>
+        </div>
         </div>
     </section>
     <!--Contact us-->
     <section class="min-h-screen bg-[#FBFBFB] py-9">
-        <div class="container">
+        <div class="md:container m-auto">
+            <div class="contact-header">
             <h2 class="text-glow-black relative text-[#090F41] text-5xl leading-12 font-bold after:content-[''] after:block after:h-0.5 after:bg-[#090F41] 
-    after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:mt-2 after:w-1/3">Contact me</h2>
-            <p class="text-xl leading-7 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    after:absolute after:top-full after:left-0 after:mt-2 after:w-[100px]">Contact me</h2>
+            <p class="text-sm leading-5 font-normal text-[#374151] mt-6 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor</p>
         </div>
-        <form class="max-w-md mx-auto">
+        <form class="min-w-md mx-auto">
             <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 w-full mb-5 group">
                     <label for="first_name"
@@ -372,23 +377,24 @@
                     placeholder="type message"></textarea>
             </div>
 
-            <button
-                class="text-[16px] leading-6 text-center text-white bg-[#8b5e35] w-52 h-11 rounded-full hover:bg-[#573311] duration-400">Submit</button>
+            <button class="text-[16px] leading-6 text-center text-white bg-[#8b5e35] w-52 h-11 rounded-full hover:bg-[#573311] duration-400">Submit</button>
         </form>
+        </div>
 
     </section>
     <!--Footer-->
-    <footer class="min-h-[40vh] bg-[#2E2E2E] text-white flex justify-between items-center">
-        <div class="trendify w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-            <h4>Trendify</h4>
-            <p>Join our newsletter to stay up to date on features and releases.</p>
-            <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our
-                company.</p>
-            <p>© 2025 Trendify. All rights reserved.</p>
+    <footer class="min-h-[40vh] bg-[#2E2E2E] text-white">
+        <div class="container flex flex-wrap justify-between items-center py-16">
+            <div class="trendify w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+            <h4 class="text-3xl leading-9 mb-5 font-normal">Trendify</h4>
+            <p class="text-[16px] leading-6 me-4 font-normal">Join our newsletter to stay up to date on features and releases.<br/><br />
+                By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our
+                company.
+            </p>
         </div>
         <div class="about-us-list w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-            <h4>About Us</h4>
-            <ul>
+            <h4 class="text-3xl leading-9 mb-5 font-normal">About Us</h4>
+            <ul class="text-[16px] leading-6 font-normal">
                 <li>FAQ</li>
                 <li>Contact</li>
                 <li>Returns</li>
@@ -397,8 +403,8 @@
             </ul>
         </div>
         <div class="customer-list w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-            <h4>Customer</h4>
-            <ul>
+            <h4 class="text-3xl leading-9 mb-5 font-normal">Customer</h4>
+            <ul class="text-[16px] leading-6 font-normal">
                 <li>Affiliates</li>
                 <li>Apple Pay Payments</li>
                 <li>Returns</li>
@@ -407,13 +413,15 @@
             </ul>
         </div>
         <div class="follow-us-list w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-            <h4>Follow Us</h4>
-            <ul>
+            <h4 class="text-3xl leading-9 mb-5 font-normal">Follow Us</h4>
+            <ul class="text-[16px] leading-6 font-normal">
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>Twitter</li>
                 <li>LinkedIn</li>
             </ul>
+        </div>
+        <p class="text-[12px] text-[#090F41] leading-4 font-normal"> <br />© 2025 Trendify. All rights reserved.</p>
         </div>
     </footer>
     <script src="js/main.js"></script>
