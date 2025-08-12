@@ -1,3 +1,4 @@
+import 'flowbite';
 const navLinks = document.querySelectorAll('nav li');
 
 navLinks.forEach((navLink) => {
