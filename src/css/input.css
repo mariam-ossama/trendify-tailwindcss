@@ -24,7 +24,7 @@
 .h2-style {
     @apply relative text-customBrown text-5xl leading-12 font-bold mb-6
     after:content-[''] after:block after:h-0.5 after:bg-customBrown
-    after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:mt-2 after:w-1/4;
+    after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:mt-2 after:w-1/4
 }
 .p-style {
     @apply text-xl leading-7 font-normal;
