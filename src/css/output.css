@@ -9,7 +9,6 @@
       "Courier New", monospace;
     --color-blue-500: #3B82F6;
     --color-blue-600: #2563EB;
-    --color-blue-700: #1D4ED8;
     --color-gray-50: #F9FAFB;
     --color-gray-100: #F3F4F6;
     --color-gray-200: #E5E7EB;
@@ -20,7 +19,6 @@
     --color-gray-700: #374151;
     --color-gray-800: #1F2937;
     --color-gray-900: #111827;
-    --color-black: #000000;
     --color-white: #ffffff;
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
@@ -44,6 +42,7 @@
     --font-weight-black: 900;
     --tracking-tight: -0.025em;
     --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
@@ -868,9 +867,6 @@
   .me-4 {
     margin-inline-end: calc(var(--spacing) * 4);
   }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -1555,6 +1551,9 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -1562,21 +1561,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
   .border-b-\[1px\] {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-b-\[2px\] {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
-  .border-b-\[12px\] {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 12px;
   }
   .dark {
     & .apexcharts-canvas .apexcharts-tooltip {
@@ -1714,20 +1701,11 @@
   .border-\[\#8b5e35\] {
     border-color: #8b5e35;
   }
-  .border-gray-100 {
-    border-color: var(--color-gray-100);
-  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
   .border-gray-400 {
     border-color: var(--color-gray-400);
-  }
-  .border-gray-500 {
-    border-color: var(--color-gray-500);
-  }
-  .border-gray-900 {
-    border-color: var(--color-gray-900);
   }
   .apexcharts-active {
     .apexcharts-canvas .apexcharts-tooltip-series-group& .apexcharts-tooltip-y-group {
@@ -1765,6 +1743,9 @@
   .bg-\[\#2E2E2E\] {
     background-color: #2E2E2E;
   }
+  .bg-\[\#8B5E35\] {
+    background-color: #8B5E35;
+  }
   .bg-\[\#8b5e35\] {
     background-color: #8b5e35;
   }
@@ -1779,12 +1760,6 @@
   }
   .bg-\[\#FBFBFB\] {
     background-color: #FBFBFB;
-  }
-  .bg-blue-700 {
-    background-color: var(--color-blue-700);
-  }
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
   }
   .bg-transparent {
     background-color: transparent;
@@ -1883,6 +1858,9 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
@@ -2151,9 +2129,6 @@
   .text-\[\#FBBF24\] {
     color: #FBBF24;
   }
-  .text-black {
-    color: var(--color-black);
-  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -2286,6 +2261,13 @@
       content: var(--tw-content);
     }
   }
+  .hover\:rounded-md {
+    &:hover {
+      @media (hover: hover) {
+        border-radius: var(--radius-md);
+      }
+    }
+  }
   .hover\:bg-\[\#573311\] {
     &:hover {
       @media (hover: hover) {
@@ -2300,10 +2282,17 @@
       }
     }
   }
-  .hover\:text-\[\#8B5E35\] {
+  .hover\:bg-gray-200 {
     &:hover {
       @media (hover: hover) {
-        color: #8B5E35;
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:bg-gray-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-500);
       }
     }
   }
@@ -2312,9 +2301,14 @@
       border-color: #8b5e35;
     }
   }
-  .focus\:text-\[\#8B5E35\] {
+  .focus\:bg-\[\#8B5E35\] {
     &:focus {
-      color: #8B5E35;
+      background-color: #8B5E35;
+    }
+  }
+  .focus\:text-white {
+    &:focus {
+      color: var(--color-white);
     }
   }
   .focus\:ring-1 {
@@ -2345,14 +2339,9 @@
       outline-style: none;
     }
   }
-  .focus-visible\:text-\[\#8B5E35\] {
+  .focus-visible\:bg-\[\#8B5E35\] {
     &:focus-visible {
-      color: #8B5E35;
-    }
-  }
-  .active\:text-\[\#8B5E35\] {
-    &:active {
-      color: #8B5E35;
+      background-color: #8B5E35;
     }
   }
   .sm\:w-full {
@@ -2475,19 +2464,37 @@
       background-color: transparent;
     }
   }
-  .md\:bg-white {
-    @media (width >= 48rem) {
-      background-color: var(--color-white);
-    }
-  }
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
     }
   }
-  .md\:text-blue-700 {
+  .md\:text-\[\#8B5E35\] {
     @media (width >= 48rem) {
-      color: var(--color-blue-700);
+      color: #8B5E35;
+    }
+  }
+  .md\:hover\:text-\[\#8B5E35\] {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: #8B5E35;
+        }
+      }
+    }
+  }
+  .md\:focus\:text-\[\#8B5E35\] {
+    @media (width >= 48rem) {
+      &:focus {
+        color: #8B5E35;
+      }
+    }
+  }
+  .md\:focus-visible\:text-\[\#8B5E35\] {
+    @media (width >= 48rem) {
+      &:focus-visible {
+        color: #8B5E35;
+      }
     }
   }
   .lg\:ms-27 {
@@ -2591,9 +2598,6 @@ label {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-}
-li {
-  margin-bottom: 15px;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
