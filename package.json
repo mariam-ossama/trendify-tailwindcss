@@ -5,6 +5,10 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+    "start": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "build": "tailwindcss -i ./src/css/input.css -o ./docs/css/output.css --minify && copyfiles -u 1 src/index.html docs"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }

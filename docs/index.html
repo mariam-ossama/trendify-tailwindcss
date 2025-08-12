@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Document</title>
+</head>
+
+<body class="font-['Playwrite_HU']">
+    <!--Navbar-->
+<nav class="bg-[#F9FAFB] border-b-[1px] border-gray-400 fixed top-0 start-0 end-0 z-50">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3">
+        <span class="self-center text-2xl leading-8 font-semibold whitespace-nowrap text-customBrown">Trendify</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-5 md:p-0 mt-4 bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0">
+        <li>
+          <a href="#home" class="nav-link text-white md:text-customBrown bg-customBrown md:bg-transparent md:focus:text-customBrown md:focus-visible:text-customBrown md:hover:text-customBrown" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#services" class="nav-link" aria-current="page">Services</a>
+        </li>
+        <li>
+          <a href="#products" class="nav-link" aria-current="page">Products</a>
+        </li>
+        <li>
+          <a href="#about-us" class="nav-link" aria-current="page">About us</a>
+        </li>
+        <li>
+          <a href="#contact-us" class="nav-link" aria-current="page">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!--Home-->
+    <header id="home" class="h-screen w-full bg-[url('../assets/images/wraper-min.png')] bg-center bg-cover text-white font-normal flex flex-col justify-center">
+        <div class=" w-full md:w-2/3 lg:w-3/4 ms-0 md:ms-5 lg:ms-27 xl:ms-0">
+            <h2 class="text-4xl leading-16 sm:w-full md:w-[90%] lg:w-1/2 xl:ms-30">Elevate Your Home with Stylish
+                Furniture</h2>
+            <p class="text-default leading-6 w-1/2 md:w-3/4 lg:w-3/4 py-9.5 xl:ms-30">Explore a range of high-quality,
+                affordable furniture designed to
+                transform any room. Discover the perfect blend of style, comfort, and functionality for your space.</p>
+            <button
+                class="btn xl:ms-30">Shop
+                now</button>
+        </div>
+    </header>
+    <!--Services-->
+    <section id="services" class="min-h-[90vh] bg-firstBgColor py-10">
+        <div class="service flex flex-wrap justify-center items-center">
+            <div class="container text-center w-1/2 lg:px-7 xl:px-12 md:w-1/3 lg:w-1/4">
+                <h2 class="h2-style">
+                    Services
+                </h2>
+                <p class="p-style">Benefits when using
+                    our services</p>
+            </div>
+            <div class="services-cont grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
+                <div class="service-item">
+                    <div class="service-item-container">
+                        <div class="service-icon-container">
+                            <i class="fa-regular fa-lightbulb service-i-style"></i>
+                        </div>
+                        <h5 class="service-h5-style">Inspiration</h5>
+                        <p class="service-p-style">Lorem ipsum dolor sit amet consectetur. Est vel risus
+                            hendrerit laoreet purus malesuada dignissim.</p>
+                    </div>
+
+                </div>
+                <div class="service-item">
+                    <div class="service-item-container">
+                        <div class="service-icon-container">
+                            <i class="fa-solid fa-headphones service-i-style"></i>
+                        </div>
+                        <h5 class="service-h5-style">24/7 Customer Services</h5>
+                        <p class="service-p-style">Lorem ipsum dolor sit amet consectetur. Est vel risus
+                            hendrerit laoreet purus malesuada dignissim.</p>
+                    </div>
+
+                </div>
+                <div class="service-item">
+                    <div class="service-item-container">
+                        <div class="service-icon-container">
+                            <i class="fa-solid fa-truck-fast service-i-style"></i>
+                        </div>
+                        <h5 class="service-h5-style">Express Shipping</h5>
+                        <p class="service-p-style">Lorem ipsum dolor sit amet consectetur. Est vel risus
+                            hendrerit laoreet purus malesuada dignissim.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Products-->
+    <section id="products" class="min-h-[200vh] bg-secondBgColor py-9">
+        <div class="container text-center py-5 w-1/2">
+            <h2 class="text-glow-brown h2-style after:w-[70px]">Products</h2>
+            <p class="p-style">Best Selling Product</p>
+        </div>
+        <div class="products-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-1-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Winter Beige Vibes</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-2-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Royal Classic Watch</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-3-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Autumn Flow Skirt</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-4-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Golden Shine Set</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-5-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Soft Neutrals Tee Pack</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-6-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Sky Blue Minimal Clutch</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-7-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Cozy Knit Layers</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <div class="product-item-card">
+                    <img class="product-img" src="../src/assets/images/item-8-min.png" alt="product image" />
+                    <div class="product-info">
+                        <h5 class="product-h5-style">Earth Tones Folded Set</h5>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <i class="fa-solid fa-star star-icon-style"></i>
+                            </div>
+                            <span class="product-rate">4.8</span>
+                            <span class="product-reviews">(500+)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="product-after-price">5000 </span>
+                            <span class="product-before-price">10000 EGP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--About us-->
+    <section id="about-us" class="min-h-[200vh] bg-firstBgColor py-9 flex justify-center items-center">
+        <div class="box">
+            <div class="container text-center">
+            <h2 class="text-glow-black h2-style text-customBlack after:h-[1px] after:bg-customBlack after:w-[90px]">A few words about us
+            </h2>
+            <p class="p-style mb-20">Make your best moments more stylish with our latest designs of
+                clothing.</p>
+        </div>
+        <div class="content flex flex-wrap justify-between items-center">
+            <div class="choose-us w-full flex flex-wrap justify-between mb-20">
+            <div class="choose-us-img m-auto rounded-2xl w-full md:w-[48%] mb-10 md:me-5">
+                <img src="../src/assets/images/about-1-min.png" alt="Choose Us Image" class="w-full block">
+            </div>
+            <div class="choose-us-paragraph m-auto w-full md:w-[48%]">
+                <h3 class="text-2xl leading-8 font-normal">Why choose us ?</h3>
+                <p class="text-customGrey text-default leading-6 mt-4 font-normal">Maecenas congue metus id turpis iaculis
+                    mattis. Sed pellentesque id arcu id scelerisque. Ut
+                    ullamcorper rutrum justo, at blandit eros maximus ut. Integer non tincidunt justo, rhoncus Aenean
+                    venenatis sed purus ac sollicitudin. Nulla mauris risus, commodo et luctus rutrum, lobortis sed
+                    mauris. Integer congue, sem elementum varius tristique.</p>
+            </div>
+        </div>
+        <div class="online-shopping w-full flex flex-wrap justify-between">
+            <div class="choose-us-paragraph m-auto w-full md:w-[48%] md:me-5">
+                <h3 class="text-2xl leading-8 font-normal">Trusted online shopping</h3>
+                <p class="text-customGrey text-default leading-6 mt-4 font-normal mb-10">Maecenas congue metus id turpis iaculis
+                    mattis. Sed pellentesque id arcu id scelerisque. Ut
+                    ullamcorper rutrum justo, at blandit eros maximus ut. Integer non tincidunt justo, rhoncus Aenean
+                    venenatis sed purus ac sollicitudin. Nulla mauris risus, commodo et luctus rutrum, lobortis sed
+                    mauris. Integer congue, sem elementum varius tristique.</p>
+            </div>
+            <div class="choose-us-img m-auto rounded-2xl w-full md:w-[48%]">
+                <img src="../src/assets/images/about-2-min.png" alt="Online Shopping Image" class="w-full block">
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--Contact us-->
+    <section id="contact-us" class="min-h-screen bg-secondBgColor py-9">
+        <div class="md:container m-auto">
+            <div class="contact-header">
+            <h2 class="text-glow-black h2-style text-customBlack after:bg-customBlack after:left-0 after:w-[100px]">Contact me</h2>
+            <p class="text-sm leading-5 font-normal text-customGrey mt-6 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor</p>
+        </div>
+        <form class="min-w-md mx-auto">
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="first_name"
+                        class="label-style">First
+                        name</label>
+                    <input type="text" name="first_name" id="first_name"
+                        class="form-control"
+                        placeholder=" " required />
+
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="last_name"
+                        class="label-style">Last
+                        name</label>
+                    <input type="text" name="last_name" id="last_name"
+                        class="form-control"
+                        placeholder=" " required />
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="email"
+                        class="label-style">Email</label>
+                    <input type="email" name="email" id="email"
+                        class="form-control"
+                        placeholder=" " required />
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="phone"
+                        class="label-style">Phone</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone"
+                        class="form-control"
+                        placeholder=" " required />
+                </div>
+            </div>
+            <!--Dropdown-->
+            <div class="relative z-0 w-full mb-5 group">
+
+                <label for="skills" class="label-style">Choose a Topic</label>
+                <select id="skills"
+                    class="form-control">
+                    <option disabled selected hidden>select one</option>
+                    <option>html</option>
+                    <option>css</option>
+                    <option>js</option>
+                    <option>bootstrap</option>
+                </select>
+
+            </div>
+            <!--textarea-->
+            <div class="relative z-0 w-full mb-5 group">
+                <label for="message" class="label-style">Message</label>
+                <textarea id="message" rows="4"
+                    class="form-control"
+                    placeholder="type message"></textarea>
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+        </div>
+
+    </section>
+    <!--Footer-->
+    <footer class="min-h-[40vh] bg-[#2E2E2E] text-white">
+        <div class="container flex flex-wrap justify-between items-center py-16">
+            <div class="footer-list-container">
+            <h4 class="text-3xl leading-9 mb-5 font-normal">Trendify</h4>
+            <p class="text-default leading-6 me-6 font-normal">Join our newsletter to stay up to date on features and releases.<br/><br />
+                By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our
+                company.
+            </p>
+        </div>
+        <!--? About us-->
+        <div class="footer-list-container">
+            <h4 class="footer-h4-style">About Us</h4>
+            <ul class="footer-ul-style">
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>Returns</li>
+                <li>Blog</li>
+                <li>Shipping</li>
+            </ul>
+        </div>
+        <!--? customer list-->
+        <div class="footer-list-container">
+            <h4 class="footer-h4-style">Customer</h4>
+            <ul class="footer-ul-style">
+                <li>Affiliates</li>
+                <li>Apple Pay Payments</li>
+                <li>Returns</li>
+                <li>Returns Policy</li>
+                <li>Returns</li>
+            </ul>
+        </div>
+        <!--? follow us list-->
+        <div class="footer-list-container">
+            <h4 class="footer-h4-style">Follow Us</h4>
+            <ul class="footer-ul-style">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+            </ul>
+        </div>
+        <p class="text-custom-12 text-customBlack leading-4 font-normal"> <br />© 2025 Trendify. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
