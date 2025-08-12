@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "build": "tailwindcss -i ./src/css/input.css -o ./docs/css/output.css --minify && copyfiles -u 1 src/index.html src/css/all.min.css src/assets/images/** src/js/main.js docs"
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1"
